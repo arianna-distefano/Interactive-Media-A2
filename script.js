@@ -34,3 +34,15 @@ function addComment() {
 
     input.value = "";
 }
+
+function toggleFullscreen() {
+    const video = document.getElementById("custom-video-player");
+
+    if (!document.fullscreenElement) {
+        video.requestFullscreen().catch(err => {
+            console.log(`Error attempting fullscreen: ${err.message}`);
+        });
+    } else {
+        document.exitFullscreen();
+    }
+}

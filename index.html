@@ -16,7 +16,7 @@
 <body>
 <!-- Header Section -->
 <header>
-    <h1>Craftspace</h1>
+    <h1>C r a f t s p a  c e</h1>
 </header>
 
 <!-- Navigation Section -->
@@ -26,80 +26,85 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Saved</a></li>
         <li><a href="#">Help</a></li>
-        <!-- Add or remove navigation items as needed -->
+        <!-- Navigation Names changed -->
     </ul>
 </nav>
 <!-- Main Content Section -->
 <main class="container">
 
-    <!-- Video title -->
-    <section class="video-title">
-        <h2>Handheld Paper Windmills</h2>
-    </section>
+    <div class="page-layout">
 
-    <!-- Media Player Section -->
-    <div class="media-player">
-        <video id="custom-video-player" controls>
-            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4" />
-        </video>
+        <!-- LEFT SIDE (video + description) -->
+        <div class="main-content">
 
-        <div class="custom-controls">
-            <button id="play-pause-btn" onclick="togglePlayPause()">
-                <img
-                        id="play-pause-img"
-                        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-                        alt="Play Button"
-                        width="24"
-                        height="24"
-                />
-            </button>
+            <section class="video-title">
+                <h2>Handheld Paper Windmills</h2>
+            </section>
 
-            <div class="progress-bar">
-                <span id="progress-bar-fill"></span>
+            <div class="media-player">
+                <video id="custom-video-player" controls>
+                    <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4" />
+                </video>
+
+                <div class="custom-controls">
+                    <button id="play-pause-btn" onclick="togglePlayPause()">
+                        <img id="play-pause-img"
+                             src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+                             width="24" height="24">
+                    </button>
+
+                    <div class="progress-bar">
+                        <span id="progress-bar-fill"></span>
+                    </div>
+                    <!-- fullscreen -->
+                    <button id="fullscreen-btn" onclick="toggleFullscreen()">
+                        <img
+                                id="fullscreen-icon"
+                                src="https://img.icons8.com/?size=100&id=69155&format=png&color=000000"
+                                width="24"
+                                height="24"
+                                alt="Fullscreen">
+                    </button>
+                </div>
             </div>
+            <!-- Buttons outside media player -->
+            <div class="media-actions">
+                <button class="action-btn">❤️ </button>
+                <button class="action-btn">💬 </button>
+                <button class="action-btn">🔗</button>
+            </div>
+
+            <section>
+                <h3>Video Description</h3>
+                <p>Easy and fun paper windmills to make for your kids or even with your kids!</p>
+            </section>
+
         </div>
+
+        <!-- RIGHT SIDE (comments) -->
+        <aside class="comments-section">
+
+            <h3>Comments</h3>
+
+            <div class="comment-form">
+                <input type="text" id="comment-input" placeholder="Write a comment...">
+                <button onclick="addComment()">Post</button>
+            </div>
+
+            <div id="comment-list"></div>
+
+        </aside>
+
     </div>
 
-    <!-- Buttons outside media player -->
-    <div class="media-actions">
-        <button class="action-btn">❤️ </button>
-        <button class="action-btn">💬 </button>
-        <button class="action-btn">🔗</button>
-    </div>
-
-    <!-- Additional Content Section -->
-    <section>
-<h3>
-    Video Description
-</h3><p>Easy and fun paper windmills to make for your kids or even with your kids! Please leave a like and a comment about how you went :)</p>
-        <!-- Add more content as needed -->
-    </section>
-    <!-- Comment Section -->
-    <section class="comments-section">
-
-        <h3>Comments</h3>
-
-        <!-- Comment form -->
-        <div class="comment-form">
-            <input type="text" placeholder="Write a comment..." id="comment-input">
-            <button onclick="addComment()">Post</button>
-        </div>
-
-        <!-- Comment list -->
-        <div id="comment-list">
-            <!-- Comments will appear here -->
-        </div>
-
-    </section>
 </main>
 
 <!-- Footer Section -->
 <footer>
     <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-    <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+   Play And Fullscreen icon by
     <a href="https://icons8.com">Icons8</a>
-    <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-    <a href="https://icons8.com">Icons8</a>
+
 </footer>
 </body>
 </html>
