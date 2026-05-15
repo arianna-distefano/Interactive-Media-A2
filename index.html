@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A3 Media Player</title>
+
+    <!-- Header Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <! -- Other Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <h1>Craftspace</h1>
+</header>
+
+<!-- Navigation Section -->
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Saved</a></li>
+        <li><a href="#">Help</a></li>
+        <!-- Add or remove navigation items as needed -->
+    </ul>
+</nav>
+<!-- Main Content Section -->
+<main class="container">
+
+    <!-- Video title -->
+    <section class="video-title">
+        <h2>Handheld Paper Windmills</h2>
+    </section>
+
+    <!-- Media Player Section -->
+    <div class="media-player">
+        <video id="custom-video-player" controls>
+            <source src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/berry-bunch_handheld-windmill-fan.mp4" type="video/mp4" />
+        </video>
+
+        <div class="custom-controls">
+            <button id="play-pause-btn" onclick="togglePlayPause()">
+                <img
+                        id="play-pause-img"
+                        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+                        alt="Play Button"
+                        width="24"
+                        height="24"
+                />
+            </button>
+
+            <div class="progress-bar">
+                <span id="progress-bar-fill"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buttons outside media player -->
+    <div class="media-actions">
+        <button class="action-btn">❤️ </button>
+        <button class="action-btn">💬 </button>
+        <button class="action-btn">🔗</button>
+    </div>
+
+    <!-- Additional Content Section -->
+    <section>
+<h3>
+    Video Description
+</h3><p>Easy and fun paper windmills to make for your kids or even with your kids! Please leave a like and a comment about how you went :)</p>
+        <!-- Add more content as needed -->
+    </section>
+    <!-- Comment Section -->
+    <section class="comments-section">
+
+        <h3>Comments</h3>
+
+        <!-- Comment form -->
+        <div class="comment-form">
+            <input type="text" placeholder="Write a comment..." id="comment-input">
+            <button onclick="addComment()">Post</button>
+        </div>
+
+        <!-- Comment list -->
+        <div id="comment-list">
+            <!-- Comments will appear here -->
+        </div>
+
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Media Player Website. All rights reserved.</p>
+    <a href="https://icons8.com/icon/59862/play">Play</a> icon by
+    <a href="https://icons8.com">Icons8</a>
+    <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+    <a href="https://icons8.com">Icons8</a>
+</footer>
+</body>
+</html>
